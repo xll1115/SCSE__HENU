@@ -1,0 +1,2 @@
+export CUDA_VISIBLE_DEVICES=1
+python -m vllm.entrypoints.openai.api_server --host 0.0.0.0 --port 30012 --model /home/host72/model-checkpoints/DeepSeek-R1-Distill-Qwen-32B --served-model-name DeepSeek-R1-Distill-Qwen-32B --max-model-len 32000 --gpu-memory-utilization 0.95 --enable-prefix-caching
